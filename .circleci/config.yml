@@ -18,6 +18,8 @@ jobs:
 
     steps:
       - checkout
+      - run:
+        command: ls /home/circleci/repo/style-swipe
 
       # Download and cache dependencies
       - restore_cache:
@@ -30,7 +32,7 @@ jobs:
 
       - save_cache:
           paths:
-            - style-swipe/node_modules
+            - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
