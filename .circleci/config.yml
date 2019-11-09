@@ -19,7 +19,7 @@ jobs:
     steps:
       - checkout
       - run:
-        command: ls /home/circleci/repo/style-swipe
+          command: ls /home/circleci/repo/style-swipe
 
       # Download and cache dependencies
       - restore_cache:
