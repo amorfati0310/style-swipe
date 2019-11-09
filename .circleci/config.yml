@@ -30,7 +30,7 @@ jobs:
 
       - save_cache:
           paths:
-            - node_modules
+            - style-swipe/node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
